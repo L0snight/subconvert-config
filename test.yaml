@@ -2,38 +2,38 @@ custom:
   clash_rule_base: base/clash_tun_d7o.yaml
 
   custom_proxy_group:
-    - {name: 🚀 节点选择, type: select, rule: [(?!中国.*).*]}
-    - {name: 🌍 国外媒体, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🇯🇵 日本","🇰🇷 韩国","🇸🇬 新加坡","🇺🇸 美国","⭕️ 其他","🚀 节点选择"]}
-    - {name: 🖥 HKMTMedia, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🚀 节点选择"]}
-    - {name: 📲 电报信息, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🚀 节点选择"]}
-    - {name: Ⓜ️ 微软服务, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🚀 节点选择"]}
-    - {name: 🍎 苹果服务, type: select, rule: ["🇭🇰 香港","🇺🇸 美国","🎯 全球直连"]}
-    - {name: 🎯 全球直连, type: select, rule: ["DIRECT","中国"]}
-    - {name: 🛑 全球拦截, type: select, rule: ["REJECT","DIRECT"]}
-    - {name: 🍃 应用净化, type: select, rule: ["REJECT","DIRECT"]}
-    - {name: 🐟 漏网之鱼, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🇯🇵 日本","🇰🇷 韩国","🇸🇬 新加坡","🇺🇸 美国","⭕️ 其他","🚀 节点选择","🎯 全球直连"]}
-    - {name: 🇭🇰 香港, type: select, rule: [香港]}
-    - {name: 🇹🇼 台湾, type: select, rule: [台湾]}
-    - {name: 🇲🇴 澳门, type: select, rule: [澳门]}
-    - {name: 🇯🇵 日本, type: select, rule: [日本]}
-    - {name: 🇰🇷 韩国, type: select, rule: [韩国]}
-    - {name: 🇸🇬 新加坡, type: select, rule: [新加坡]}
-    - {name: 🇺🇸 美国, type: select, rule: [美国]}
-    - {name: ⭕️ 其他, type: select, rule: [(?!(中国|香港|台湾|澳门|日本|韩国|新加坡|美国).*).*]}
+    - 🚀 节点选择`select`(?!中国.*).*
+    - 🌍 国外媒体`select`[]🇭🇰 香港`[]🇹🇼 台湾`[]🇲🇴 澳门`[]🇯🇵 日本`[]🇰🇷 韩国`[]🇸🇬 新加坡`[]🇺🇸 美国`[]⭕️ 其他`[]🚀 节点选择
+    - 🖥 HKMTMedia`select`[]🇭🇰 香港`[]🇹🇼 台湾`[]🇲🇴 澳门`[]🚀 节点选择
+    - 📲 电报信息`select`[]🇭🇰 香港`[]🇹🇼 台湾`[]🇲🇴 澳门`[]🚀 节点选择
+    - Ⓜ️ 微软服务`select`[]🇭🇰 香港`[]🇹🇼 台湾`[]🇲🇴 澳门`[]🚀 节点选择
+    - 🍎 苹果服务`select`[]🇭🇰 香港`[]🇺🇸 美国`[]🎯 全球直连
+    - 🎯 全球直连`select`[]DIRECT`中国
+    - 🛑 全球拦截`select`[]REJECT`[]DIRECT
+    - 🍃 应用净化`select`[]REJECT`[]DIRECT
+    - 🐟 漏网之鱼`select`[]🇭🇰 香港`[]🇹🇼 台湾`[]🇲🇴 澳门`[]🇯🇵 日本`[]🇰🇷 韩国`[]🇸🇬 新加坡`[]🇺🇸 美国`[]⭕️ 其他`[]🚀 节点选择`[]🎯 全球直连
+    - 🇭🇰 香港`select`香港
+    - 🇹🇼 台湾`select`台湾
+    - 🇲🇴 澳门`select`澳门
+    - 🇯🇵 日本`select`日本
+    - 🇰🇷 韩国`select`韩国
+    - 🇸🇬 新加坡`select`新加坡
+    - 🇺🇸 美国`select`美国
+    - ⭕️ 其他`select`(?!(中国|香港|台湾|澳门|日本|韩国|新加坡|美国).*).*
 
 
   surge_ruleset:
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list", group: "🎯 全球直连"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list", group: "🛑 全球拦截"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list", group: "🍃 应用净化"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list", group: "🛑 全球拦截"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list", group: "🎯 全球直连"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list", group: "Ⓜ️ 微软服务"}
-    - {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/HKMTMedia.list", group: "🖥 HKMTMedia"}
-    - {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/GlobalMedia.list", group: "🌍 国外媒体"}
-    - {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list", group: "📲 电报信息"}
-    - {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list", group: "🐟 漏网之鱼"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list", group: "🎯 全球直连"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list", group: "🎯 全球直连"}
-    - {ruleset: "GEOIP,CN", group: "🎯 全球直连"}
-    - {ruleset: "match", group: "🐟 漏网之鱼"}
+    - 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list'
+    - 🛑 全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    - 🍃 应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    - 🛑 全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
+    - 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    - Ⓜ️ 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    - 🖥 HKMTMedia,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/HKMTMedia.list
+    - 🌍 国外媒体,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/GlobalMedia.list
+    - 📲 电报信息,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list
+    - 🐟 漏网之鱼,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list
+    - 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    - 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    - 🎯 全球直连,[]GEOIP,CN
+    - 🐟 漏网之鱼,[]FINAL
