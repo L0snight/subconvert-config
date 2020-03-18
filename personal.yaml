@@ -21,17 +21,16 @@ custom_proxy_group:
 - {name: ⭕️ 其他, type: select, rule: [(?!(中国|香港|台湾|澳门|日本|韩国|新加坡|美国).*).*]}
 
 surge_ruleset:
-- {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list", group: "🎯 全球直连"}
-- {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list", group: "🛑 全球拦截"}
-- {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list", group: "🍃 应用净化"}
-- {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list", group: "🛑 全球拦截"}
-- {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list", group: "🎯 全球直连"}
-- {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list", group: "Ⓜ️ 微软服务"}
-- {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/HKMTMedia.list", group: "🖥 HKMTMedia"}
-- {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/GlobalMedia.list", group: "🌍 国外媒体"}
-- {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list", group: "📲 电报信息"}
-- {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list", group: "🐟 漏网之鱼"}
-- {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list", group: "🎯 全球直连"}
-- {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list", group: "🎯 全球直连"}
-- {ruleset: "GEOIP,CN", group: "🎯 全球直连"}
-- {ruleset: "match", group: "🐟 漏网之鱼"}
+- 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+- 🛑 全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+- 🍃 应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+- 🛑 全球拦截,https://raw.githhttps://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+- Ⓜ️ 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+- 🖥 HKMTMedia,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/HKMTMedia.list
+- 🌍 国外媒体,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/GlobalMedia.list
+- 📲 电报信息,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list
+- 🐟 漏网之鱼,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list
+- 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+- 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+- 🎯 全球直连,[]GEOIP,CN
+- 🐟 漏网之鱼,[]FINAL
