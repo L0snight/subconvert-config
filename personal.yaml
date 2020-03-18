@@ -35,5 +35,5 @@ custom:
     - {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list", group: "🐟 漏网之鱼"}
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list", group: "🎯 全球直连"}
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list", group: "🎯 全球直连"}
-    - {ruleset: "GEOIP,CN", group: "🎯 全球直连"}
-    - {ruleset: "match", group: "🐟 漏网之鱼"}
+    - {rule: "GEOIP,CN", group: "🎯 全球直连"}
+    - {rule: "FINAL", group: "🐟 漏网之鱼"}
