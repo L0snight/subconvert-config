@@ -21,7 +21,6 @@ custom:
     - {name: 🇺🇸 美国, type: select, rule: ["美国"]}
     - {name: ⭕️ 其他, type: select, rule: ["^(?!.*(中国|香港|台湾|澳门|日本|韩国|新加坡|美国)).*"]}
 
-
   surge_ruleset:
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list", group: "🎯 全球直连"}
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list", group: "🛑 全球拦截"}
