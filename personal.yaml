@@ -2,7 +2,7 @@ custom:
   clash_rule_base: base/clash_tun_d7o.yaml
 
   custom_proxy_group:
-    - {name: 🚀 节点选择, type: select, rule: [(?!中国.*).*]}
+    - {name: 🚀 节点选择, type: select, rule: ["(?!中国.*).*"]}
     - {name: 🌍 国外媒体, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🇯🇵 日本","🇰🇷 韩国","🇸🇬 新加坡","🇺🇸 美国","⭕️ 其他","🚀 节点选择"]}
     - {name: 🖥 HKMTMedia, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🚀 节点选择"]}
     - {name: 📲 电报信息, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🚀 节点选择"]}
@@ -12,14 +12,14 @@ custom:
     - {name: 🛑 全球拦截, type: select, rule: ["REJECT","DIRECT"]}
     - {name: 🍃 应用净化, type: select, rule: ["REJECT","DIRECT"]}
     - {name: 🐟 漏网之鱼, type: select, rule: ["🇭🇰 香港","🇹🇼 台湾","🇲🇴 澳门","🇯🇵 日本","🇰🇷 韩国","🇸🇬 新加坡","🇺🇸 美国","⭕️ 其他","🚀 节点选择","🎯 全球直连"]}
-    - {name: 🇭🇰 香港, type: select, rule: [香港]}
-    - {name: 🇹🇼 台湾, type: select, rule: [台湾]}
-    - {name: 🇲🇴 澳门, type: select, rule: [澳门]}
-    - {name: 🇯🇵 日本, type: select, rule: [日本]}
-    - {name: 🇰🇷 韩国, type: select, rule: [韩国]}
-    - {name: 🇸🇬 新加坡, type: select, rule: [新加坡]}
-    - {name: 🇺🇸 美国, type: select, rule: [美国]}
-    - {name: ⭕️ 其他, type: select, rule: [(?!(中国|香港|台湾|澳门|日本|韩国|新加坡|美国).*).*]}
+    - {name: 🇭🇰 香港, type: select, rule: ["香港"]}
+    - {name: 🇹🇼 台湾, type: select, rule: ["台湾"]}
+    - {name: 🇲🇴 澳门, type: select, rule: ["澳门"]}
+    - {name: 🇯🇵 日本, type: select, rule: ["日本"]}
+    - {name: 🇰🇷 韩国, type: select, rule: ["韩国"]}
+    - {name: 🇸🇬 新加坡, type: select, rule: ["新加坡"]}
+    - {name: 🇺🇸 美国, type: select, rule: ["美国"]}
+    - {name: ⭕️ 其他, type: select, rule: ["^(?!.*(中国|香港|台湾|澳门|日本|韩国|新加坡|美国)).*"]}
 
 
   surge_ruleset:
