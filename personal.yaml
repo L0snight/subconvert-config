@@ -1,0 +1,10 @@
+common:
+  clash_rule_base: base/clash_tun_d7o.yaml
+
+proxy_group:
+  custom_proxy_group:
+    - {name: string, type: type, rule: [reg], url: t/f, interval: time}
+
+ruleset:
+  surge_ruleset:
+    - {ruleset: "path to rule list", group: "groupName"}
