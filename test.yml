@@ -1,5 +1,0 @@
-  custom:
-    custom_proxy_group:
-      🚀 节点选择`select`^(?!中国.*).*
-    surge_ruleset:
-      🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
