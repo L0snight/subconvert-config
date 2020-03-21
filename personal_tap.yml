@@ -1,5 +1,5 @@
 custom:  
-  clash_rule_base: C:\Users\rainb\Documents\projects\subconvert-config\base\clash_tap.yml
+  clash_rule_base: https://raw.githubusercontent.com/L0snight/subconvert-config/master/base/clash_tap.yml
   enable_rule_generator: true
   overwrite_original_rules: false
 
