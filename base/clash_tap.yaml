@@ -16,6 +16,6 @@ dns:
     - 119.29.29.29
     - 114.114.114.114
     - 223.5.5.5
-Proxy: ~
-Proxy Group: ~
-Rule: ~
+proxies: ~
+proxy-groups: ~
+rules: ~
