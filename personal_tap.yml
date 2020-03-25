@@ -1,5 +1,4 @@
- 
-  clash_rule_base: https://raw.githubusercontent.com/L0snight/subconvert-config/master/base/clash_tap.yaml
+custom:  
   enable_rule_generator: true
   overwrite_original_rules: false
 
