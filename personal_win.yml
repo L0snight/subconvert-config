@@ -12,8 +12,6 @@ custom:
     - {name: Ⓜ️ 微软服务, type: select, rule: ["[]🇭🇰 香港","[]🇹🇼 台湾","[]🇲🇴 澳门","[]1️⃣ 勤俭持家","[]2️⃣ 走向小康","[]3️⃣ 奢侈"]}
     - {name: 🍎 苹果服务, type: select, rule: ["[]🇭🇰 香港","[]🇺🇸 美国","[]🎯 全球直连"]}
     - {name: 🎯 全球直连, type: select, rule: ["[]DIRECT","中国"]}
-    - {name: 🛑 全球拦截, type: select, rule: ["[]REJECT","[]DIRECT"]}
-    - {name: 🍃 应用净化, type: select, rule: ["[]REJECT","[]DIRECT"]}
     - {name: 🐟 漏网之鱼, type: select, rule: ["[]🇭🇰 香港","[]🇹🇼 台湾","[]🇲🇴 澳门","[]🇯🇵 日本","[]🇰🇷 韩国","[]🇸🇬 新加坡","[]🇺🇸 美国","[]⭕️ 其他","[]🚀 节点选择","[]🎯 全球直连"]}
     - {name: 🇭🇰 香港, type: select, rule: ["香港"]}
     - {name: 🇹🇼 台湾, type: select, rule: ["台湾"]}
@@ -29,9 +27,6 @@ custom:
 
   surge_ruleset:
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list", group: "🎯 全球直连"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list", group: "🛑 全球拦截"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list", group: "🍃 应用净化"}
-    - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list", group: "🛑 全球拦截"}
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list", group: "🎯 全球直连"}
     - {ruleset: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list", group: "Ⓜ️ 微软服务"}
     - {ruleset: "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/HKMTMedia.list", group: "🖥 HKMTMedia"}
