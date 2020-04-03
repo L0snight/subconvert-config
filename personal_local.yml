@@ -25,14 +25,14 @@ custom:
     - {name: 3️⃣ 奢侈, type: select, rule: ["高级 IPLC|CTM|NHN"]}
 
   surge_ruleset:
-    - {ruleset: "rules/personal/ACL4SSR/Clash/LocalAreaNetwork.list", group: "🎯 全球直连"}
-    - {ruleset: "rules/personal/ACL4SSR/Clash/GoogleCN.list", group: "🎯 全球直连"}
-    - {ruleset: "rules/personal/ACL4SSR/Clash/Microsoft.list", group: "Ⓜ️ 微软服务"}
-    - {ruleset: "rules/personal/Profiles/Surge/Ruleset/HKMTMedia.list", group: "🖥 HKMTMedia"}
-    - {ruleset: "rules/personal/Profiles/Surge/Ruleset/GlobalMedia.list", group: "🌍 国外媒体"}
-    - {ruleset: "rules/personal/Profiles/Surge/Ruleset/Telegram.list", group: "📲 电报信息"}
-    - {ruleset: "rules/personal/Profiles/Surge/Ruleset/Global.list", group: "🚀 节点选择"}
-    - {ruleset: "rules/personal/ACL4SSR/Clash/ChinaDomain.list", group: "🎯 全球直连"}
-    - {ruleset: "rules/personal/ACL4SSR/Clash/ChinaCompanyIp.list", group: "🎯 全球直连"}
+    - {ruleset: "Rules/ACL4SSR/Clash/LocalAreaNetwork.list", group: "🎯 全球直连"}
+    - {ruleset: "Rules/ACL4SSR/Clash/GoogleCN.list", group: "🎯 全球直连"}
+    - {ruleset: "Rules/ACL4SSR/Clash/Microsoft.list", group: "Ⓜ️ 微软服务"}
+    - {ruleset: "Rules/Profiles/Surge/Ruleset/HKMTMedia.list", group: "🖥 HKMTMedia"}
+    - {ruleset: "Rules/Profiles/Surge/Ruleset/GlobalMedia.list", group: "🌍 国外媒体"}
+    - {ruleset: "Rules/Profiles/Surge/Ruleset/Telegram.list", group: "📲 电报信息"}
+    - {ruleset: "Rules/Profiles/Surge/Ruleset/Global.list", group: "🚀 节点选择"}
+    - {ruleset: "Rules/ACL4SSR/Clash/ChinaDomain.list", group: "🎯 全球直连"}
+    - {ruleset: "Rules/ACL4SSR/Clash/ChinaCompanyIp.list", group: "🎯 全球直连"}
     - {rule: "GEOIP,CN", group: "🎯 全球直连"}
     - {rule: "FINAL", group: "🐟 漏网之鱼"}
