@@ -10,4 +10,4 @@ git clone https://github.com/L0snight/Rules.git --recursive
 ```
 ./install.sh install
 ```
-3. **Change Parameters**
+3. **Modify Parameters**
