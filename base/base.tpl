@@ -10,6 +10,11 @@ external-controller: :9090
 {% if request.ui == "true" %}
 external-ui: ui
 {% endif %}
+{% if request.tun == "true" %}
+tun: 
+	enable: true
+experimental:
+	interface-name: wlp4s0
 {% if request.tap == "true" %}
 {% if request.clash.dns == "fake" %}
 dns:
