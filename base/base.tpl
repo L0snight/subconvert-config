@@ -15,6 +15,7 @@ tun:
 	enable: true
 experimental:
 	interface-name: wlp4s0
+{% endif %}
 {% if request.tap == "true" %}
 {% if request.clash.dns == "fake" %}
 dns:
