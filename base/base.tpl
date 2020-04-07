@@ -17,6 +17,8 @@ experimental:
   interface-name: wlp4s0
 {% endif %}
 {% if request.tap == "true" %}
+experimental:
+  interface-name: WLAN
 {% if request.clash.dns == "fake" %}
 dns:
   enable: true
