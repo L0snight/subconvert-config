@@ -5,6 +5,10 @@
 ```
 git clone https://https://github.com/L0snight/subconvert-config.git
 ```
+2. **Build**
+```
+./install.sh build
+```
 2. **Install**
 ```
 ./install.sh install
