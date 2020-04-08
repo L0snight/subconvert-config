@@ -23,7 +23,11 @@ function _build() {
 }
 
 function _install() {
-  echo "Install"
+  assert cp base/* ../base
+  assert cp config/* ../config
+  assert cp profiles/* ../profiles
+  assert cp -r Rules ../Rules
+  assert cp pref.yml ./pref.yml
 }
 
 function _help() {
