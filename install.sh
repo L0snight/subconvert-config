@@ -19,7 +19,7 @@ function assert_command() {
 function _build() {
   assert_command git 'git not found'
   assert  git clone https://github.com/L0snight/Rules.git --recursive
-  echo "Clone rules repo"
+  echo "Clone Rules repo"
 }
 
 function _install() {
