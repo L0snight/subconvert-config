@@ -1,6 +1,6 @@
 common:
   api_mode: false
-  api_access_token: token
+  api_access_token: profile_token
   default_url: []
   insert_url: []
   exclude_remarks: ["(到期|剩余流量|时间|官网|产品)"]
