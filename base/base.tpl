@@ -7,41 +7,13 @@ allow-lan: {{ global.clash.allow_lan }}
 mode: Rule
 log-level: {{ global.clash.log_level }}
 external-controller: :9090
-{% if request.ui == "true" %}
 external-ui: ui
+{% if request.tap == "true" %}
+{% include 'tap.tpl' %}
 {% endif %}
 {% if request.tun == "true" %}
-tun:
-  enable: true
-experimental:
-  interface-name: wlp4s0
+{% include 'tun.tpl' %}
 {% endif %}
-{% if request.tap == "true" %}
-experimental:
-  interface-name: WLAN
-{% if request.clash.dns == "fake" %}
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: fake-ip
-  nameserver:
-    - 119.29.29.29
-    - 114.114.114.114
-    - 223.5.5.5
-{% endif %}
-{% if request.clash.dns == "redir" %}
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
-  nameserver:
-    - 119.29.29.29
-    - 114.114.114.114
-    - 223.5.5.5
-{% endif %}
-{% else %}
 {% if request.clash.dns == "fake" %}
 dns:
   enable: true
@@ -63,7 +35,6 @@ dns:
     - 119.29.29.29
     - 114.114.114.114
     - 223.5.5.5
-{% endif %}
 {% endif %}
 {% if request.new_name == "true" %}
 proxies: ~ 
