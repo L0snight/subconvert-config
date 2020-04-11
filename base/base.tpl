@@ -9,41 +9,14 @@ log-level: {{ global.clash.log_level }}
 external-controller: :9090
 external-ui: ui
 {% if request.tap == "true" %}
-{% include 'tap.tpl' %}
-{% endif %}
-{% if request.tun == "true" %}
-{% include 'tun.tpl' %}
-{% endif %}
-{% if request.clash.dns == "fake" %}
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
-  nameserver:
-    - 119.29.29.29
-    - 114.114.114.114
-    - 223.5.5.5
-{% endif %}
-{% if request.clash.dns == "redir" %}
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:1053
-  enhanced-mode: redir-host
-  nameserver:
-    - 119.29.29.29
-    - 114.114.114.114
-    - 223.5.5.5
+{% include "template/clash/tap.tpl" %}
+{% else if request.tun == "true" %}
+{% include "template/clash/tun.tpl" %}
+{% else %}
+{% include "template/clash/dns.tpl" %}
 {% endif %}
 {% if request.new_name == "true" %}
-proxies: ~ 
-proxy-groups: ~
-rules: ~
-{% else %}
-Proxy: ~
-Proxy Group: ~
-Rule: ~
+{% include "template/clash/name_filed.tpl" %}
 {% endif %}
 
 {% endif %}
