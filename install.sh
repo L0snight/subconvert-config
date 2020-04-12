@@ -29,7 +29,7 @@ function _build() {
 
 function _config() {
   assert_command sed 'sed not found'
-  assert sed -i "s/api_access_token.*$/api_access_token: ${PROFILE_TOKEN}/g" pref.yml
+  assert sed -i "s/api_access_token.*$/api_access_token: ${PROFILE_TOKEN}/g" ${SUBCONVERT_HOME}/pref-new.yml
   assert sed -i "s@^url=.*\$@url=${SUBSCRIBE_URL}@g" profiles/clash.ini
 }
 
@@ -39,7 +39,7 @@ function _install() {
   assert cp profiles/* ${SUBCONVERT_HOME}/profiles
   assert cp -r Rules ${SUBCONVERT_HOME}/Rules
   assert cp -r template ${SUBCONVERT_HOME}/template
-  assert cp pref.yml ${SUBCONVERT_HOME}/pref.yml
+  assert cp ${SUBCONVERT_HOME}/pref-new.yml ${SUBCONVERT_HOME}/pref.yml
 }
 
 function _help() {
