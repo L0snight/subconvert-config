@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#相关变量
 SUBCONVERT_HOME="/path/to/subconverter"
 SUBSCRIBE_URL="https://subscribe/url"
 PROFILE_TOKEN="your_token"
@@ -23,7 +24,7 @@ function assert_command() {
 function _build() {
   assert_command git 'git not found'
   rm -rf Rules
-  assert  git clone https://github.com/L0snight/Rules.git --recursive
+  assert git clone https://github.com/L0snight/Rules.git --recursive
   echo "Clone Rules repo"
 }
 
