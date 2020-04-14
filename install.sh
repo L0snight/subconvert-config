@@ -38,7 +38,8 @@ function _install() {
   assert cp base/* ${SUBCONVERT_HOME}/base
   assert cp config/* ${SUBCONVERT_HOME}/config
   assert cp profiles/* ${SUBCONVERT_HOME}/profiles
-  assert cp -r Rules ${SUBCONVERT_HOME}/Rules
+  assert rm ${SUBCONVERT_HOME}/rules/*
+  assert cp Rules/* ${SUBCONVERT_HOME}/rules
   assert cp -r template ${SUBCONVERT_HOME}/template
   assert cp ${SUBCONVERT_HOME}/pref-new.yml ${SUBCONVERT_HOME}/pref.yml
 }
