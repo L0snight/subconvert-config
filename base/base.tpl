@@ -7,7 +7,9 @@ allow-lan: {{ global.clash.allow_lan }}
 mode: Rule
 log-level: {{ global.clash.log_level }}
 external-controller: :9090
+{% if request.ui == "true" %}
 external-ui: ui
+{% endif %}
 {% if request.tap == "true" %}
 {% include "template/clash/tap.tpl" %}
 {% else if request.tun == "true" %}
