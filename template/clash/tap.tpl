@@ -1,5 +1,3 @@
-experimental:
-  interface-name: WLAN
 {% if request.clash.dns == "fake" %}
 dns:
   enable: true
